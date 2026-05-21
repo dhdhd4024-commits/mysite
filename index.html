@@ -16,6 +16,7 @@ body{
 
    position:relative;
    -webkit-text-size-adjust:100%;
+   -webkit-font-smoothing: antialiased;
    background:
       radial-gradient(circle at 20% 20%, #1b1b3a, transparent 40%),
       radial-gradient(circle at 80% 30%, #2a0f3a, transparent 45%),
@@ -32,6 +33,7 @@ body::after{
     filter:blur(140px);
     opacity:0.5;
     z-index:-1;
+    transform: translateZ(0);
 }
 
 body::before{
@@ -95,7 +97,7 @@ body::after{
         transform: translateY(0);
     }
     to{
-        transform: translateY(-300px);
+        transform: translateY(-100%);
     }
 }
 img{
